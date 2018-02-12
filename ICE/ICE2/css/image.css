@@ -44,7 +44,7 @@ img {
 }
 
 .square:focus {
-  transform: translateX(1400px);
+  transform: translateX(110%);
   /* animation: xchange 4s linear alternate;
   animation-iteration-count:2;
   animation-fill-mode: forwards; */

@@ -30,9 +30,6 @@ img {
 	border-radius: 50%;
 }
 
-.hover:active ~ .bar > .square{
-  animation: xchange 2s linear reverse;
-}
 
 .active:active{
 	opacity: 0.5;
@@ -62,23 +59,23 @@ img {
 }
 
 
-@keyframes xchange {
+/* @keyframes xchange {
   0%{
     transform: translateX(0);
   }
   100%{
     transform: translateX(2000px);
   }
-}
+} */
 
-@keyframes spin {
+/* @keyframes spin {
   0%   {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /*
 @keyframes rotate {

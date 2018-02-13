@@ -1,6 +1,6 @@
 @media only screen and (min-width:650px)  {
   .top-nav ul li, .menu-icon{
-  	border-top: 0; /*CHANGE*/
+  	border-top: 0;
     display: inline-block;
   }
   .top-nav {
@@ -32,13 +32,11 @@
 @media only screen and (min-width:1000px)  {
 
   .top-nav {
-    display: flex;
     flex-direction: row;
   }
 
   .top-nav ul{
     border-top: 0;
-    display: flex;
     justify-content: space-between;
     width: 60%;
   }

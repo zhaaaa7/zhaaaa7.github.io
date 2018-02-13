@@ -195,7 +195,6 @@ footer p{
 }
 
 .photo-grid {
-  background-color: grey;
   display: flex;
   flex-flow: row wrap;
 }

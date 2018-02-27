@@ -1,0 +1,32 @@
+.Auth{
+    margin: 150px auto 20px;
+    
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 2px 3px #ccc;
+    border: 1px solid #eee;
+    padding: 10px;
+    padding-top: 30px;
+    box-sizing: border-box;
+
+}
+
+form {
+    background-color:white;
+}
+
+
+
+.Auth p {
+    color: grey;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+@media (min-width:600px){
+    .Auth {
+        width: 500px;
+    }
+}

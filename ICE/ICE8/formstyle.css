@@ -3,6 +3,7 @@ body {
 	color: #111111;
 	font-family: 'Open Sans', 'Times New Roman', serif;
 	padding: .5%;
+	box-sizing: border-box;
 }
 
 #title {
@@ -52,6 +53,7 @@ form {
 .frame-area {
 	margin: 10px;
 	border: 1px solid #d9d7d7;
+	padding: 2px;
 }
 
 label {

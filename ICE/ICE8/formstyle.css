@@ -1,0 +1,119 @@
+body {
+	background: #091343;
+	color: #111111;
+	font-family: 'Open Sans', 'Times New Roman', serif;
+	padding: .5%;
+	box-sizing: border-box;
+}
+
+#title {
+	text-align: center;
+	padding: 1%;
+}
+
+h2{
+	color: #ffffff;
+}
+
+h4 {
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	padding: 1%;
+	margin: 10px;
+}
+
+legend {
+	font-size: 16px;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-left: 5px;
+  font-weight: bold;
+	width: 98%;
+
+}
+
+fieldset {
+	background-color: #ffffff;
+	padding: 2%;
+	margin: 1%;
+
+}
+
+form {
+	background: #ffffff;
+	-moz-border-radius: 2%;
+	padding: 2%;
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+	padding:5px;
+}
+
+.frame-area {
+	margin: 10px;
+	border: 1px solid #d9d7d7;
+	padding: 5px;
+}
+
+label {
+	display: inline-block;;
+	padding: .5%;
+	font-weight: normal;
+}
+
+input {
+	/* display: inline-block; */
+	padding: .5%;
+	height: 26px;
+}
+
+button {
+	display: block;
+	padding: 1% 3%;
+	margin-top: 12px;
+	text-align: center;
+	color: #091343;
+	background: #d9d7d7;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+input[type=submit] {
+	font-size: 20px;
+	font-weight: normal;
+	display: block;
+	height: 40px;
+	margin: 0 auto;
+	padding: .5% 5%;
+	text-align: center;
+	color: white;
+	background: #091343;
+	border-radius: 5%;
+}
+
+/* form{
+	counter-reset: fieldsets;
+}
+
+form > fieldset > legend:before {
+	content: "Step " counter(fieldsets) ": ";
+	counter-increment: fieldsets;
+} */
+
+
+/* responsive */
+
+@media only screen and (max-width: 480px) {
+	.form {width: 35%;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.form {width: 70%;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.form {width: 100%;
+	}
+}

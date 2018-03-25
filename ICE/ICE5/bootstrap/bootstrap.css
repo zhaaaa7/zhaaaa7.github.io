@@ -1,0 +1,28 @@
+.row{
+  width: 98%;
+}
+
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border: 2px solid black;
+  padding: 20px;
+  font-size: 150%;
+}
+.a {
+    background-color: green;
+}
+
+.b{
+    background-color: yellow;
+
+}
+
+.c{
+    background-color: red
+}
+
+.d{
+    background-color: green;
+}

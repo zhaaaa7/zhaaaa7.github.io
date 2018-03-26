@@ -178,7 +178,7 @@ footer a{
 }
 #name-card::after{
   content: '';
-  background-image: url(../img/jumbotron.jpg);
+  background-image: url(../images/jumbotron.jpg);
   background-position: -200px -650px;
   top:0;
   left:0;

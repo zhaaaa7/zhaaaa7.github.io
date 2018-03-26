@@ -1,0 +1,132 @@
+@media only screen and (min-width:650px)  {
+  header {
+    left: 0;
+    height: 100vh;
+    width: 180px;
+  }
+  footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+  }
+  #logo {
+    top: 50px;
+    left: 70px;
+  }
+  label {
+    display: none;
+  }
+  #menu-content{
+      margin-top: 120px;
+      display: block;
+    }
+  #top-nav ul {
+    margin: auto;
+  }
+
+  #top-nav ul li {
+    margin: 10px auto;
+    border-top: none;
+    border-bottom: 1px solid #F4F296;
+  }
+  #top-nav ul li.current-page{
+  	background-color: #2C4D3A;
+    border-bottom: 3px solid #F4F296;
+    color: #F4F296;
+  }
+
+  #top-nav a.current-page{
+    color: #F4F296;
+    font-weight: bold;
+  }
+  #top-nav ul li a{
+  	padding: 1.3em 0 0.6em 0;
+  }
+  #main-content{
+  	margin-top: 20px;
+    margin-left: 180px;
+  }
+  /* .photo-cell:nth-child(3), .photo-cell:nth-child(4){
+  	width: 48%;
+  } */
+  footer {
+    width: 180px;
+  }
+}
+
+@media only screen and (min-width:1000px)  {
+  header{
+    box-shadow: 0px 3px 12px 1px rgba(141, 141, 139, .75);
+    width: 100%;
+    height: auto;
+    background-color: #2C4D3A;
+  }
+  #logo {
+    top: 5px;
+    left: 13px;
+  }
+
+  #menu-content{
+      margin-top: 0;
+      margin-left: 60%;
+      width: 40%;
+  }
+
+  #top-nav ul {
+    flex-direction: row;
+    padding-right: 10px;
+  }
+
+  #top-nav ul li{
+    border-top: 0;
+    justify-content: space-between;
+    margin: 0 10px;
+    padding: 0 10px;
+    border-bottom: none;
+  }
+  #top-nav ul li a{
+    font-size: 17px;
+  	padding: 1.2em 0 0.8em 0;
+  }
+
+  #top-nav ul li.current-page{
+    border-bottom: 5px solid #F4F296;
+  }
+  #main-content{
+  	margin-top: 90px;
+    margin-left: 0;
+  }
+  #name-card{
+    height: 400px;
+  }
+  #uxProjects {
+    width: 80%;
+    margin: 10px auto;
+  }
+  .project {
+    flex-direction: row;
+    height: 300px;
+  }
+  .project img {
+    height: 300px;
+    width: auto;
+  }
+  footer{
+    position: static;
+    width: 100%;
+    bottom: 0;
+  }
+  /* photo */
+  .gallary{
+  	max-width: 2000px;
+  }
+  .column {
+    margin: 2%;
+      width: 45%;
+  }
+  .photo-cell{
+    width: 100%;
+  }
+
+
+}

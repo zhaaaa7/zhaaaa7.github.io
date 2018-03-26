@@ -1,0 +1,244 @@
+/*-----MAIN-----*/
+* {
+  box-sizing: border-box;
+}
+
+h2{
+	font-size: 2em;
+  padding-bottom: 20px;
+}
+h5{
+	font-size: 1.5em;
+  padding-bottom: 20px;
+}
+p{
+  line-height: 1.2em;
+}
+html, body{
+	height: 100%;
+}
+/*skip content*/
+.skip{
+	position: absolute;
+	left: -999px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	z-index: -999;
+	color: #E3AD02;
+}
+a.skip:active, a.skip:focus, a.skip:hover {
+    position:fixed;
+    top: auto;
+    left: auto;
+  	width: auto;
+  	height: auto;
+  	overflow: visible;
+  	z-index: 999;
+}
+
+
+/* body */
+html, body, header, footer{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+	display: flex;
+	flex-direction: column;
+}
+
+.main-content{
+	flex: 1 0 auto;
+	margin-top: 110px;
+}
+
+
+/*-----HEADER & NAVIGATION-----*/
+header{
+	font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  box-shadow: 0px 3px 12px 1px rgba(141, 141, 139, .75);
+  width: 100%;
+  position: fixed;
+  background-color: #2C4D3A;
+  z-index: 1;
+}
+#logo {
+  z-index: 20;
+  position: fixed;
+  left: 15px;
+  top:5px;
+  padding: 4px 5px 1px 5px;
+  border: 1px solid #F4F296;
+}
+
+input#menu{
+    display: none;
+}
+
+label{
+    font-size: 30px;
+    color:#F4F296;
+    text-align: right;
+    display: block;
+    cursor: pointer;
+    padding: 5px 10px 5px 15px;
+    margin: 8px;
+    box-sizing: border-box;
+}
+
+
+/*mobile-first*/
+#top-nav ul{
+  padding: 0;
+	list-style-type: none;
+	background-color: #2C4D3A;
+	display: flex;
+  flex-direction: column;
+}
+#top-nav ul li{
+	border-top: 1px solid #F4F296;
+}
+#top-nav ul li a{
+	font-size: 1.2em;
+	color: #DDDDDA;
+	text-decoration: none;
+	padding: 0.8em 1em;
+	display: block;
+	text-align: center;
+}
+
+#top-nav ul li.current-page{
+	background-color: #72BBB0;
+
+}
+
+/* Toggle Effect */
+
+#menu-content{
+    display: none;
+}
+input:checked ~  #menu-content{
+    display: block;
+}
+
+
+/*-----LOGO-----*/
+.logo{
+	margin: 0;
+	text-align: center;
+	padding: .25em .75em;
+}
+.logo img{
+	height: 3em;
+}
+
+/*-----FOOTER-----*/
+footer{
+	color: #F4F296;
+	font-size: .85em;
+	text-align: center;
+  width: 100%;
+  background-color: #2C4D3A;
+  padding: 8px 0;
+  margin-top: 10px;
+  z-index: 2;
+}
+footer p{
+  margin-top: 5px;
+	padding-top: .5em;
+}
+footer a{
+  margin: 0 10px;
+}
+
+.icon-white{
+  color: #C2E7E6;
+}
+
+
+/*-----HOMEPAGE-----*/
+#main-content{
+	margin-top: 90px;
+}
+#name-card{
+	color: #2C4D3A;
+  text-align: center;
+  width: 90%;
+  height: 300px;
+	margin: auto;
+	padding-top: 100px;
+  border: 2px solid black;
+  border-image: linear-gradient( #F3F3F4,#F4F296, #C2E7E6) 30;
+  position: relative;
+
+}
+#name-card::after{
+  content: '';
+  background-image: url(../img/jumbotron.jpg);
+  background-position: -200px -650px;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.8;
+  position: absolute;
+}
+#uxProjects {
+  width: 80%;
+  margin: 10px auto;
+}
+.project {
+  overflow: hidden;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  /* box-shadow: 0px 2px 8px 1px #2C6A5A; */
+  border: 2px solid black;
+  border-image: linear-gradient( #F3F3F4,#F4F296, #C2E7E6) 30;
+
+}
+
+.project img {
+  width: 100%;
+}
+.pro-description {
+  margin: 20px 30px;
+}
+/*-----IMAGES PAGE ------*/
+
+/*photo gallery*/
+.crafts h1 {
+  margin-bottom: 20px;
+}
+
+.gallary{
+  box-sizing: border-box;
+  padding: 0 10%;
+	margin: auto;
+	max-width: 500px;
+}
+
+.photo-grid {
+  display: flex;
+  flex-flow: row wrap;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+
+}
+.photo-cell{
+	margin-left:2%;
+  margin-bottom:8%;
+}
+.photo-cell img {
+	width: 100%;
+  display: inline-block;
+  box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+}

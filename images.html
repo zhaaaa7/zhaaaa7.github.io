@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Responsive Styled Site Images</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--Style-->
+	<link href="css/lightbox.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+</head>
+<body class="body body-home">
+	<a href="#main-content" class="skip">Skip navigation</a>
+	<header>
+		<div id = "logo">
+			<a href="index.html"><img src="./images/logo.png" alt="logo" width="30px"></a>
+		</div>
+		<nav id = "top-nav">
+			<input type="checkbox" id="menu" />
+      <label for="menu">&#9776;</label>
+			<div id="menu-content">
+	       <ul >
+	            <li><a href="index.html">HOME</a></li>
+	            <li class="current-page"><a class="current-page" href="image.html">DESIGN</a></li>
+	            <li><a href="#">BLOG</a></li>
+	            <li ><a href="contact.html">CONTACT</a></li>
+	        </ul>
+				<div>
+   		</nav>
+	</header>
+	<div id="main-content">
+		<!--Photo Gallery-->
+		<section  class="gallary">
+			<div class="photo-grid">
+				<div class="column">
+					<div class="photo-cell">
+						<a href="images/collage.jpg" data-lightbox="roadtrip" data-title="collage"><img class="resp-img" src="images/collage.jpg" alt="collage"></a>
+
+					</div>
+					<div class="photo-cell ">
+						<a href="images/monetweb.png" data-lightbox="roadtrip" data-title="web"><img class="resp-img" src="images/monetweb.png" alt="monetweb"></a>
+
+					</div>
+					<div class="photo-cell">
+						<img class="resp-img" src="images/nutrition.jpg" alt="nutrition">
+					</div>
+			  </div>
+			  <div class="column">
+					<div class="photo-cell">
+						<img class="resp-img" src="images/poster.png" alt="poster">
+					</div>
+					<div class="photo-cell ">
+						<img class="resp-img" src="images/spring.jpg" alt="spring">
+					</div>
+					<div class="photo-cell  ">
+						<img class="resp-img" src="images/stamp.png" alt="stamp">
+					</div>
+					<div class="photo-cell  ">
+						<img class="resp-img" src="images/Uleadlogp.png" alt="Uleadlogp">
+					</div>
+			  </div>
+			</div>
+		</section>
+	</div>
+	<footer >
+		<a href="http://www.linkedin.com/in/"><i class="fab fab fa-linkedin icon-white" aria-hidden="true"></i></a>
+		<a href="https://www.pinterest.com/"><i class="fab fa-pinterest-square icon-white" aria-hidden="true"></i></a>
+		<a href="mailto:yourname@umich.edu?Subject=Hello%Responsive"><i class="fa fa-envelope icon-white" aria-hidden="true"></i></a>
+		<p>Designed by Shijie Zhao</p>
+		<p>&copy; 2017</p>
+	</footer>
+	<script src="js/lightbox-plus-jquery.js"></script>
+</body>
+</html>

@@ -33,20 +33,14 @@ $(document).ready(function(){
    }
  });
 
-  // $(window).resize(function() {
-  //   console.log('resize',$(window).width());
-  //   if($(window).width() <= 450){
-  //     $( "#menu-content" ).css( "display", "none" );
-  //     $(window).scroll(function(){
-  //      $( "#menu-content" ).css( "display", "none" ).fadeOut( "slow" );
-  //      $('label').html("&#9776;");
-  //      console.log('resize scroll',$(window).width());
-  //     });
-  //   }else{
-  //    $( "#menu-content" ).css( "display", "block" );
-  //    console.log('Large screen resize scroll',$(window).width());
-  //   }
-  // });
+  $(window).resize(function() {
+    if($(window).width() > 450){
+      $( "#menu-content" ).css( "display", "block" );
+      console.log('resize',$(window).width());
+    }else{
+     $( "#menu-content" ).css( "display", "none" );
+    }
+  });
 
 
 

@@ -1,8 +1,8 @@
-@media only screen and (min-width:650px)  {
+@media only screen and (min-width:450px)  {
   header {
     left: 0;
     height: 100vh;
-    width: 180px;
+    width: 160px;
   }
   footer {
     position: fixed;
@@ -11,15 +11,15 @@
   }
   #logo {
     top: 50px;
-    left: 70px;
+    left: 60px;
   }
   label {
     display: none;
   }
   #menu-content{
-      margin-top: 120px;
-      display: block;
-    }
+    margin-top: 120px;
+  }
+
   #top-nav ul {
     margin: auto;
   }
@@ -43,18 +43,25 @@
   	padding: 1.3em 0 0.6em 0;
   }
   #main-content{
-  	margin-top: 20px;
-    margin-left: 180px;
+    margin-top: 0;
+    margin-left: 160px;
   }
-  /* .photo-cell:nth-child(3), .photo-cell:nth-child(4){
-  	width: 48%;
-  } */
+
+  #uxProjects {
+    max-width: 500px;
+    margin-top: 30px;
+  }
+  .gallary{
+    margin-top: 30px;
+  	max-width: 800px;
+  }
+
   footer {
-    width: 180px;
+    width: 160px;
   }
 }
 
-@media only screen and (min-width:1000px)  {
+@media only screen and (min-width:1024px)  {
   header{
     box-shadow: 0px 3px 12px 1px rgba(141, 141, 139, .75);
     width: 100%;
@@ -68,13 +75,16 @@
 
   #menu-content{
       margin-top: 0;
-      margin-left: 60%;
+      margin-left: 58%;
+      margin-right: 20px;
       width: 40%;
   }
 
   #top-nav ul {
     flex-direction: row;
     padding-right: 10px;
+    width: 400px;
+    justify-content: space-around;
   }
 
   #top-nav ul li{
@@ -93,19 +103,19 @@
     border-bottom: 5px solid #F4F296;
   }
   #main-content{
-  	margin-top: 90px;
     margin-left: 0;
+    margin-top: 60px;
   }
-  #name-card{
-    height: 400px;
-  }
+
   #uxProjects {
     width: 80%;
-    margin: 10px auto;
+    max-width: 1000px;
+    margin: 30px auto 10px auto;
   }
   .project {
     flex-direction: row;
     height: 300px;
+    margin-bottom: 40px;
   }
   .project img {
     height: 300px;
@@ -116,13 +126,15 @@
     width: 100%;
     bottom: 0;
   }
-  /* photo */
+
   .gallary{
   	max-width: 2000px;
+    margin-top: 30px;
   }
+
   .column {
     margin: 2%;
-      width: 45%;
+    width: 45%;
   }
   .photo-cell{
     width: 100%;

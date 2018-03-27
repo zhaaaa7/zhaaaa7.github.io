@@ -97,8 +97,8 @@
     border-bottom: none;
   }
   #top-nav ul li a{
-    font-size: 17px;
-  	padding: 1.2em 0 0.8em 0;
+    font-size: 20px;
+  	padding: 1em 0 0.6em 0;
   }
 
   #top-nav ul li.current-page{

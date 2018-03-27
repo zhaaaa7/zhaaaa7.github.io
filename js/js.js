@@ -3,7 +3,7 @@ $(document).ready(function(){
   $("#menu").on("change",function(){
     if(this.checked){
       $("#menu-content").css( "display", "block" );
-      $(this).siblings('label').html("&#10539;"); // cross
+      $(this).siblings('label').html("&#10005;"); // cross
     }else{
       $( "#menu-content" ).css( "display", "none" );
       $(this).siblings('label').html("&#9776;");

@@ -1,6 +1,5 @@
 /*-----MAIN-----*/
 html{
-  box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -100,6 +99,9 @@ label{
   font-weight: bold;
 }
 
+#menu-content {
+  display:none;
+}
 
 
 
@@ -144,16 +146,17 @@ footer a {
 /*-----HOMEPAGE-----*/
 #main-content {
 	margin-top: 60px;
+  font-size: 11px;
 }
 #name-card {
 	color: black;
   text-align: center;
   width: 100%;
-  height: 50vh;
+  height: 400px;
   letter-spacing: 1px;
   background-image: url(../images/jumbotron.jpg);
   background-size: cover;
-  padding-top: 40px;
+  padding: 20px 0;
 }
 
 .name {
@@ -164,21 +167,25 @@ footer a {
 
 #name-content {
   background-color: rgba(255, 255, 255, 0.6);
-  padding: 100px 0;
+  height: 360px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #self {
   padding: 40px 0;
-  height: 50vh;
+  height: 400px;
   text-align: center;
   background-color: #fff;
   color: black;
+  overflow:auto;
 
 }
 #self p {
   line-height: 40px;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 /*-----Project Page ------*/
@@ -203,6 +210,7 @@ footer a {
   margin-bottom: 18px;
   padding-bottom: 2px;
   border-bottom: 1px solid #C2E7E6;
+  color: #2C6A5A;
 }
 
 .project img {

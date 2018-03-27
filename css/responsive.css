@@ -18,6 +18,7 @@
   }
   #menu-content{
     margin-top: 120px;
+    display:block;
   }
 
   #top-nav ul {
@@ -45,6 +46,7 @@
   #main-content{
     margin-top: 0;
     margin-left: 160px;
+    font-size: 16px;
   }
 
   #uxProjects {

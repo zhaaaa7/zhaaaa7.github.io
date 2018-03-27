@@ -142,11 +142,14 @@ footer a {
   color: #F4F296;
 }
 
+.iconhidden {
+  display: none;
+}
 
 /*-----HOMEPAGE-----*/
 #main-content {
 	margin-top: 60px;
-  font-size: 11px;
+  font-size: 13px;
 }
 #name-card {
 	color: black;

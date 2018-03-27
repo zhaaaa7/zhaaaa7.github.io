@@ -10,7 +10,7 @@ $(document).ready(function(){
     }
     });
 
-
+ // check the size when first loaded
   if($(window).width() <= 450){
     $(window).scroll(function(){
       $( "#menu-content" ).css( "display", "none" ).fadeOut( "slow" );
@@ -21,7 +21,7 @@ $(document).ready(function(){
     $( "#menu-content" ).css( "display", "block" );
   }
 
-
+ // check the size when scrolling
   $(window).scroll(function(){
     if($(window).width() <= 450){
        $( "#menu-content" ).css( "display", "none" ).fadeOut( "slow" );
@@ -33,6 +33,7 @@ $(document).ready(function(){
    }
  });
 
+ //check the size when resizing
   $(window).resize(function() {
     if($(window).width() > 450){
       $( "#menu-content" ).css( "display", "block" );
@@ -41,7 +42,6 @@ $(document).ready(function(){
      $( "#menu-content" ).css( "display", "none" );
     }
   });
-
 
 
 });

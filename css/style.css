@@ -295,7 +295,6 @@ legend {
   width: 80%;
   margin:0 auto;
   padding-top: 10px;
-  z-index: 1;
 }
 
 #form-content input {
@@ -338,6 +337,7 @@ legend {
 }
 
 #form-content span.required {
-  color: #72BBB0;
+  color: #2C6A5A;
   display: inline;
+  font-weight: 800;
 }

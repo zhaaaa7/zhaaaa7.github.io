@@ -13,7 +13,7 @@
     top: 50px;
     left: 60px;
   }
-  label {
+  nav label {
     display: none;
   }
   #menu-content{
@@ -141,6 +141,9 @@
   .photo-cell{
     width: 100%;
   }
+  #form-content {
+    width: 50%;
 
+  }
 
 }

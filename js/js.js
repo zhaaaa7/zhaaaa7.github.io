@@ -14,7 +14,7 @@ $(document).ready(function(){
   if($(window).width() <= 450){
     $(window).scroll(function(){
       $( "#menu-content" ).css( "display", "none" ).fadeOut( "slow" );
-      $('label').html("&#9776;");
+      $("#menu-label").html("&#9776;");
       console.log('450 scroll',$(window).width());
     });
    }else{
@@ -25,7 +25,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
     if($(window).width() <= 450){
        $( "#menu-content" ).css( "display", "none" ).fadeOut( "slow" );
-       $('label').html("&#9776;");
+       $("menu-label").html("&#9776;");
        console.log('resize scroll',$(window).width());
       }
     else{$( "#menu-content" ).css( "display", "block" );

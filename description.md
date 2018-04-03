@@ -23,6 +23,7 @@ Why you expect to get that grade.
 I meet all the requirements for 140 points.
 I use about 30 classes and ids to do styling.
 I use about 15 rules in each media query.
+I use flex box to do layout.
 
 A write-up of your "extras"
 I add a "skip nav" function, as well as  "tabindex" on everything navigation item to enhance accessibility.

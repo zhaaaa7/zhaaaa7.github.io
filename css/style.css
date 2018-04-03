@@ -341,3 +341,159 @@ legend {
   display: inline;
   font-weight: 800;
 }
+
+
+
+
+
+/* ---------- media query---------- */
+
+@media only screen and (min-width:450px)  {
+  header {
+    left: 0;
+    height: 100vh;
+    width: 160px;
+  }
+  footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+  }
+  #logo {
+    top: 50px;
+    left: 60px;
+  }
+  nav label {
+    display: none;
+  }
+  #menu-content{
+    margin-top: 120px;
+    display:block;
+  }
+
+  #top-nav ul {
+    margin: auto;
+  }
+
+  #top-nav ul li {
+    margin: 10px auto;
+    border-top: none;
+    border-bottom: 1px solid #F4F296;
+  }
+  #top-nav ul li.current-page{
+  	background-color: #2C4D3A;
+    border-bottom: 3px solid #F4F296;
+    color: #F4F296;
+  }
+
+  #top-nav a.current-page{
+    color: #F4F296;
+    font-weight: bold;
+  }
+  #top-nav ul li a{
+  	padding: 1.3em 0 0.6em 0;
+  }
+  #main-content{
+    margin-top: 0;
+    margin-left: 160px;
+    font-size: 16px;
+  }
+
+  #uxProjects {
+    max-width: 500px;
+    margin-top: 30px;
+  }
+  .gallary{
+    margin-top: 30px;
+  	max-width: 800px;
+  }
+
+  footer {
+    width: 160px;
+  }
+}
+
+@media only screen and (min-width:1024px)  {
+  header{
+    box-shadow: 0px 3px 12px 1px rgba(141, 141, 139, .75);
+    width: 100%;
+    height: auto;
+    background-color: #2C4D3A;
+  }
+  #logo {
+    top: 5px;
+    left: 13px;
+  }
+
+  #menu-content{
+      margin-top: 0;
+      margin-left: 58%;
+      margin-right: 20px;
+      width: 40%;
+  }
+
+  #top-nav ul {
+    flex-direction: row;
+    padding-right: 10px;
+    width: 400px;
+    justify-content: space-around;
+  }
+
+  #top-nav ul li{
+    border-top: 0;
+    justify-content: space-between;
+    margin: 0 10px;
+    padding: 0 10px;
+    border-bottom: none;
+  }
+  #top-nav ul li a{
+    font-size: 20px;
+  	padding: 1em 0 0.6em 0;
+  }
+
+  #top-nav ul li.current-page{
+    border-bottom: 5px solid #F4F296;
+  }
+  #main-content{
+    margin-left: 0;
+    margin-top: 60px;
+  }
+
+  #uxProjects {
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto 10px auto;
+  }
+  .project {
+    flex-direction: row;
+    height: 300px;
+    margin-bottom: 40px;
+  }
+  .project img {
+    height: 300px;
+    width: auto;
+  }
+  footer{
+    position: static;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .gallary{
+  	max-width: 2000px;
+    margin-top: 30px;
+  }
+
+  .column {
+    margin: 2%;
+    width: 45%;
+  }
+  .photo-cell{
+    width: 100%;
+  }
+  #form-content {
+    width: 50%;
+
+  }
+
+}

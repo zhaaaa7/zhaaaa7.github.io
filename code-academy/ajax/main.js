@@ -46,6 +46,7 @@ return jsonResponse;
 };
 
 function expand() {
+  console.log('clicked');
   $responseField.empty();
   expandUrl();
   return false;

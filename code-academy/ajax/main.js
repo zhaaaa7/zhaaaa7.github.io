@@ -1,7 +1,7 @@
 // Include data for accessing Google APIs
-
 const apiKey = 'AIzaSyAv4hU-zRjuCQg3j6TbDLLGuGTMa6Fza3o';
-const url="https://www.googleapis.com/urlshortener/v1/url";
+const url = 'https://www.googleapis.com/urlshortener/v1/url';
+
 // Some page elements
 
 const $inputField = $('#input');
@@ -12,18 +12,18 @@ const $responseField = $('#responseField');
 // AJAX functions
 
 function expandUrl() {
-const urlToExpand=url + '?shortUrl=' + $inputField.val() + '&key=' + apiKey;
-  fetch(urlToExpand).then(response=>{
-    console.log(response);
-    if(response.ok){
+  const urlToExpand = url + '?shortUrl=' + $inputField.val() + '&key=' + apiKey;
+  fetch(urlToExpand).then(response => {
+    if (response.ok) {
       return response.json();
-      
     }
     throw new Error('Request failed!');
-  },networkError=>{
-    console.log(networkError.message);
+  }, networkError => console.log(networkError.message)).then(jsonResponse => {
+    $responseField.append('<p> Your expanded URL is </p><p> ' + jsonResponse.longUrl + '</p>');
+    return jsonResponse;
   });
 };
+
 
 function shortenUrl() {
   const urlWithKey = url + '?key=' + apiKey;
@@ -46,19 +46,16 @@ return jsonResponse;
 };
 
 function expand() {
-  console.log('clicked');
   $responseField.empty();
   expandUrl();
   return false;
-}
+};
 
 function shorten() {
   $responseField.empty();
   shortenUrl();
   return false;
-}
-
-// Call functions on submit
+};
 
 $expandButton.click(expand);
 $shortenButton.click(shorten);

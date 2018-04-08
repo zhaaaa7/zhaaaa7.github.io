@@ -16,6 +16,7 @@ const urlToExpand=url + '?shortUrl=' + $inputField.val() + '&key=' + apiKey;
   fetch(urlToExpand).then(response=>{
     if(response.ok){
       return response.json();
+      console.log(response);
     }
     throw new Error('Request failed!');
   },networkError=>{

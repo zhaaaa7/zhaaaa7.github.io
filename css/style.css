@@ -1,7 +1,8 @@
 /*-----MAIN-----*/
-.lightboxplaceholder {
+span.lightboxplaceholder {
   display: none;
 }
+
 html{
   font-family: 'Open Sans', sans-serif;
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shijie Zhao SI539 Final Exam</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+  </head>
+  <body>
+    <h1>Shijie Zhao</h1>
+    <img id="examPic" src="./images/examPic.JPG" alt="examPic"/><img id="logo" src="./images/UMSI-logo.jpg" alt="logo"/>
+
+    <button id="hide">Hide Image</button>
+    <button id="show">Show Image</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("#hide").on("click",function(){
+        $("#examPic").hide();
+        $("#logo").addClass("center");
+      });
+      $("#show").on("click",function(){
+        $("#examPic").show();
+        $("#logo").removeClass("center");
+      });
+    });
+    </script>
+  </body>
+</html>

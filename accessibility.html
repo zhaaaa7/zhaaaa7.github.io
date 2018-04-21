@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Accessibility review</title>
+    <style>
+    .title {
+      background-color: grey;
+      color: white;
+      font-size: 1.3rem;
+      padding: 30px;
+      line-height: 1.5;
+    }
+
+    .title a:link, .title a:visited {
+      color: white;
+    }
+      .option__group {
+        margin: 20px;
+      }
+      label {
+        font-size: 1.2rem;
+      }
+      .suggestion {
+        color: green;
+        margin-left: 20px;
+      }
+
+      .supplement {
+        color: red;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="title">Accessibility evaluation for <a href="https://alumni.umich.edu">https://alumni.umich.edu </a>as an engineer, using the <a href="http://accessibility.voxmedia.com/#engineers"> guidelines. </a>
+      <br>
+       Checked box means the criterion is met.</p>
+    <div class="option__group">
+      <input type="checkbox" name="option" id="option1" checked>
+      <label for="option1">Use the correct HTML element for your content</label>
+    </div>
+    <div class="option__group">
+      <input type="checkbox" name="option" id="option2">
+      <label for="option2">Support keyboard navigation</label>
+      <p class="suggestion">[Suggestion]: use tabindex="0" to ensure an element can receive keyboard focus </p>
+    </div>
+    <div class="option__group">
+      <input type="checkbox" name="option" id="option3">
+      <label for="option3">Understand and use HTML landmarks</label>
+      <p class="suggestion">[Suggestion]: There many aria-* attributes being used, however, the WAVE and w3 Validator all show lots of errors caused by the aria-*. For example, "Broken ARIA reference: An aria-labelledby or aria-describedby reference exists, but the target for the reference does not exist." So developer needs to learn more about how aria-*s work.</p>
+
+    </div>
+    <div class="option__group">
+      <input type="checkbox" name="option" id="option4" checked>
+      <label for="option4">Write good alt text for your images</label>
+      <p class="supplement">[Note]: Though the alt are semantic, there are some images missing alt attribute.</p>
+    </div>
+    <div class="option__group">
+      <input type="checkbox" name="option" id="option5">
+      <label for="option5">Design focus states to help users navigate and understand where they are</label>
+      <p class="suggestion">[Suggestion]: Highligh the "current page" on navigation.</p>
+    </div>
+    <div class="option__group">
+      <input type="checkbox" name="option" id="option6" checked>
+      <label for="option6">Help users understand inputs, and help them avoid and correct mistakes</label>
+    </div>
+    <div class="option__group">
+      <input type="checkbox" name="option" id="option7" checked>
+      <label for="option7">Use ARIA attributes when applicable</label>
+    </div>
+    <div class="option__group">
+      <input type="checkbox" name="option" id="option8">
+      <label for="option8">Give users a way to skip top level navigation to access main content</label>
+    </div>
+    <div class="option__group">
+      <input type="checkbox" name="option" id="option9" checked>
+      <label for="option9">Make links descriptive</label>
+      <p class="supplement">[Note]: Though the alt are semantic, there are some links missing text.</p>
+    </div>
+    <div class="option__group">
+      <input type="checkbox" name="option" id="option10" checked>
+      <label for="option10">Avoid images and iconography in pseudo-elements</label>
+    </div>
+    <div class="option__group">
+      <input type="checkbox" name="option" id="option11">
+      <label for="option10">Make SVGs accessible to assistive technology</label>
+      <p class="suggestion">[Suggestion]: SVG should have a title or embedded text.</p>
+
+    </div>
+    <div class="option__group">
+      <input type="checkbox" name="option" id="option12" checked>
+      <label for="option12">Hide decorative elements from screen readers</label>
+    </div>
+    <div class="option__group">
+      <input type="checkbox" name="option" id="option13">
+      <label for="option13">Create alternate routes for users to access information</label>
+    </div>
+    <div class="option__group">
+      <input type="checkbox" name="option" id="option14">
+      <label for="option14">Links should be visually identifiable and have clear :focus and :active states</label>
+    </div>
+    <div class="option__group">
+      <input type="checkbox" name="option" id="option14">
+      <label for="option14">HTML document should have a language attribute</label>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,328 @@
+.goal {
+    header {
+        width: 100vw;
+        height: 100vw;
+        position: relative; 
+        color: #fff; 
+    }
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__headbg {
+        width: 200%;
+        height: 200%;
+        transform: translate(-25%,-40%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-clip-path: ellipse(50% 12% at 50% 50%);
+        clip-path: ellipse(50% 12% at 50% 50%);
+        background-color: #353954;
+        z-index: -1;
+    }
+
+    &__title {
+        padding: 3rem 1rem 0 6rem;
+        width: 50%;
+
+        @media only screen and (min-width:700px) {
+            padding: 6rem 1rem 0 6rem;
+            
+        }
+
+        h1 {
+            line-height: 2;
+            @media only screen and (min-width:700px) {
+                font-size: 4rem;
+                
+            }
+            @media only screen and (min-width:900px) {
+                font-size: 7rem;
+                
+            }
+        }
+        p {
+            line-height: 1.4;
+            @media only screen and (min-width:900px) {
+                font-size: 1.8rem;
+                
+            }
+        }
+        
+    }
+
+    &__screen {
+        
+        position: absolute;
+        top: 8%;
+        right: 18%;
+
+        img {
+            height: 12rem;
+            display: block;
+            @media only screen and (min-width:700px) {
+                height: 18rem;
+                
+            }
+
+            @media only screen and (min-width:1000px) {
+                height: 22rem;
+            }   
+        }
+    }
+
+    &__circle {
+        border-radius: 50%;
+        position: absolute;
+        font-size: 6px;
+        font-weight: 100;
+        text-align: center;
+        @media only screen and (min-width:700px) {
+            font-size: 12px;
+            
+        }
+        
+
+        &--1 {
+            background-color: red;
+            height: 2rem;
+            width: 2rem;
+            line-height: 2rem;
+            top: 50%;
+            left: -30%;
+            @media only screen and (min-width:700px) {
+                height: 2.5rem;
+                width: 2.5rem;
+                line-height: 2.5rem;
+                
+            }
+        }
+
+        &--2 {
+            background-color: #4863C9;
+            height: 2rem;
+            width: 2rem;
+            line-height: 2rem;
+            top: 40%;
+            right: -30%;
+            @media only screen and (min-width:700px) {
+                height: 2.5rem;
+                width: 2.5rem;
+                line-height: 2.5rem;
+                
+            }
+        }
+
+        &--3 {
+            background-color: #E1CB4D;
+            height: 1.5rem;
+            width: 1.5rem;
+            line-height: 1.5rem;
+            top: 90%;
+            right: -20%;
+            @media only screen and (min-width:700px) {
+                height: 2rem;
+                width: 2rem;
+                line-height: 2rem;
+                
+            }
+        }
+
+        &--4 {
+            background-color: #fff;
+            height: 1rem;
+            width: 1rem;
+            top: 100%;
+            left: -10%;
+        }
+        &--5 {
+            background-color: #fff;
+            height: 1.3rem;
+            width: 1.3rem;
+            top: 10%;
+            right: -13%;
+        }
+    }
+}
+
+.goal__main {
+    padding: 2rem;
+    line-height: 1.5;
+}
+
+.goal__feature {
+
+    margin-top: -22rem;
+    padding: 2rem;
+
+    @media only screen and (min-width:700px) {
+        margin-top: -33rem;
+        
+    }
+    @media only screen and (min-width:900px) {
+        margin-top: -35rem;
+        
+    }
+    @media only screen and (min-width:1000px) {
+        margin-top: -40rem;
+        
+    }
+
+    .feature-box {
+        // background-color: rgba($color-grey-light-2,.86);
+        font-size: 1.5rem;
+        padding:  0.5rem;
+    
+        width: 100%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        &__icon {
+   
+               width: 8rem;
+               height: 8rem;
+               fill: #353954;   
+               
+               @media only screen and (min-width:900px) {
+                width: 5rem;
+               height: 5rem;
+                
+            }
+
+        }
+    
+        &__info {
+            padding: 2rem;
+        }
+    
+        }
+}
+
+.goal__proto {
+    .proto__screen {
+        margin: 0 auto;
+        width: 90%;
+        padding: 3rem;
+        height: 40vh;      
+        position: relative;
+
+        
+
+        .proto__composition {
+
+            width: 25rem;
+            img {
+                display: block;
+                position: absolute;
+                box-shadow: $small-shadow;
+            }
+        }
+
+        .goal1 {
+            width: 12rem;
+            top:0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 5;
+        }
+
+        .goal2 {
+            width: 8rem;
+            left: 25%;
+            top: 12%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        .goal3 {
+            width: 8rem;
+            top: 12%;
+            left: 75%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+    }
+}
+
+.goal__theory {
+
+    padding: 3rem;
+    .theory__info {
+        margin-top: 2rem;
+    }
+    .theory__img {
+        display: flex;
+        margin: 4rem auto;
+        width: 100%;
+        line-height: 1;
+        @media only screen and (min-width:900px) {
+            width: 70%;
+        }   
+
+        img {
+            width: 14rem;
+            box-shadow: 0 1rem 3rem rgba(0,0,0, .15);
+            margin: 1.5rem 0 6rem 0;
+        }
+        .left {
+            flex-basis: 45%;
+            padding-top: .5rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .middle {
+            flex-basis: 10%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            .line {
+                height: 15rem;
+                width: 2px;
+                background-color: #353954;
+            }
+
+            .circle {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                border: 1px solid #353954;
+                position: relative;
+
+                &::after {
+                    content:'';
+                    display: block;
+                    position: absolute;
+                    width: 1rem;
+                    height: 1rem;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    background-color: #353954;
+                    border-radius: 50%;
+
+                }
+            }
+        }
+
+        .right {
+            flex-basis: 45%;
+            padding-top: 17.5rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+}

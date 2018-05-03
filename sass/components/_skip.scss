@@ -1,0 +1,19 @@
+.skip{
+	position: absolute;
+	left: -999px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	z-index: -999;
+	color: #E3AD02;
+}
+a.skip:active, a.skip:focus, a.skip:hover {
+  position:fixed;
+  top: auto;
+  left: auto;
+	width: auto;
+	height: auto;
+	overflow: visible;
+	z-index: 999;
+}

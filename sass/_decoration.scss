@@ -1,0 +1,30 @@
+.decoration-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 10vh;
+    width: 65vw;
+    background-color:rgba(249, 217, 73, 0.89);
+    transform: translate(2rem, -20%);
+}
+
+.decoration-leftTop {
+    width: 100vw;
+    height: 13vh;
+    position: relative;
+    background-color: #F9D949;
+    transform: translate(-2rem, 100%) skewY(25deg);
+    z-index: -1;
+
+
+}
+
+
+.decoration-rightTop {
+    width: 100vw;
+    height: 13vh;
+    position: relative;
+    background-color: #F9D949;
+    transform: translate(-2rem,0) skewY(-25deg);
+    z-index: -1;
+}

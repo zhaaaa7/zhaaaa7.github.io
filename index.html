@@ -4,67 +4,170 @@
 		<title>Shijie Zhao Home</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!--Style-->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="css/default.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	</head>
 	<body>
-		<a href="#main-content" class="skip">Skip navigation</a>
-		<header>
-			<div id = "logo">
-				<a href="index.html"><img src="./images/logo.png" alt="personal logo" width="30"></a>
-			</div>
-			<nav id = "top-nav">
-				<input type="checkbox" id="menu" />
-	      <label id="menu-label" for="menu">&#9776;</label>
-				<div id="menu-content">
-		       <ul >
-		            <li class="current-page"><a class="current-page" href="index.html" tabindex="1">HOME</a></li>
-		            <li><a href="design.html" tabindex="2">DESIGN</a></li>
-		            <li><a href="project.html" tabindex="3">PROJECT</a></li>
-		            <li><a href="contact.html" tabindex="4">CONTACT</a></li>
-		        </ul>
-				</div>
-	   	</nav>
-		</header>
+		<div class="homepage">
 
-		<div id="main-content">
-			<section id="name-card">
-				<section id="name-content">
-				<h2 class="name">Shijie Zhao</h2>
-				<p>Web Development & UX Design</p>
+		
+		<a href="#main-content" class="skip">Skip navigation</a>
+		<header class="header">
+			
+			<div class="header-fixed">
+				<div class="header__logo-box">
+					<a href="index.html"><img class="header__logo" src="./images/logo.png" alt="personal logo"></a>
+				</div>
+				<div class="header__menu-icon">
+						<input type="checkbox" id="menu" />
+						<label id="menu-label" for="menu">&#9776;</label>
+				</div>
+			</div>
+			
+			<nav class="header__nav">			
+				<div class="header__nav-content">
+					<ul class="nav-list">
+						<li class="nav-list__item current-page"><a class="nav-list__link current-page" href="index.html" tabindex="1">HOME</a></li>
+						<li class="nav-list__item"><a class="nav-list__link" href="design.html" tabindex="2">DESIGN</a></li>
+						<li class="nav-list__item"><a class="nav-list__link" href="project.html" tabindex="3">PROJECT</a></li>
+						<li class="nav-list__item"><a class="nav-list__link" href="coding.html" tabindex="4">CODING</a></li>
+					</ul>
+				</div>
+			</nav>
+			   
+		</header>
+		<section class="index__name-card">
+				<!-- <img src="../images/indexhead.png" alt=""> -->
+				<section class="index__name-content">
+					<h1 class="heading1-index">Shijie Zhao</h1>
+					<h2 class="heading2-index">Web Development & UX Design</h2>
+				</section>
 			</section>
-			</section>
-				<section id="self">
-					<p>I am Shijie Zhao.</p>
-					<p>I am from a small but beautiful city in east of China.<p>
-					<p>I am now the second year master student,<p>
-					<p>in School of Information, <p>
-					<p>Unversity of Michigan<p>
-					<p>I am major in Human Computer Interaction, <p>
-					<p>and interested in user research, experience design <p>
-					<p>and web development.</p>
+
+		<div class="index">
+
+			<section class="index__self-intro">
+				<div class="designer">					
+					<h2 class="homepage-heading2">I am a designer</h2>
+					<div class="designer__content">
+							<div class="designer__description">
+								<h3 class="heading-3 mb-small">Graphic Design</h3>
+								<p class="mb-small">After taking one term serious Graphic Design course, I master the basic knowledge of design, such as color, typography, and layout. </p>
+								<br>
+							<!-- <img src="../images/device.svg" alt=""> -->
+								<h3 class="heading-3 mb-small">UX Design</h3>
+								<p>As a student majoring in Human Computer Interaction, I am skilled at wireframing, prototyping and interaction design. </p>
+							</div>
+		
+					</div>
+				<a href="./design.html"><button class="homepage-button"> <span>View More</span> </button></a>	
+				
+				</div>
+
+				<div class="developer">
+					<h2 class="homepage-heading2">I am a programmer</h2>
+					<div class="developer__content">
+							<div class="developer__description">
+							
+								<div class="developer__box">
+									
+									<p>I have great interests in front-end development. I really enjoy the sense of achievement when tranforming design skethes to really working web pages and applications. </p>					<img src="../images/js-bg.png" alt="">	
+								</div>
+
+								<div class="developer__box">
+									<img src="../images/py-bg.png" alt="">		
+									<p>As the foundation programming language of UMSI, Python is a must-have skill. After finishing two Python courses over i year, I am able to use all kinds of APIs, write web crawlers, interact with database, and apply MVC model to create data visualization. </p>	
+														
+								</div>
+							
+
+								
+
+								<div class="developer__box">
+									
+									<p>I know the basics of backend development, i.e, how requests and responses running between browser and server, and finally the database. The skill sets include php, SQL and network basics.  </p>	
+									<img src="../images/php-bg.png" alt="">					
+								</div>
+								<div class="developer__box">
+									<img src="../images/r.png" alt="">
+									<p>Data analysis is also my interest. I am able to use R in traditional, default way by using various statistic formula and function. I also took a course where we use the tidyverse package which made operations on R more like database and made machining learning much more easier.</p>						
+								</div>
+									
+							</div>
+
+							
+						
+					</div>	
+					<a href="./coding.html"><button class="homepage-button"> <span>View More</span> </button></a>	
+				
+				</div>
+
+				<div class="researcher">
+					<h2 class="homepage-heading2">I am a researcher</h2>
+					<div class="researcher__content">
+							<p class="researcher__summary">During the first two terms of my master year, my group conducted two researches on internal management and website usability of Data Driven Detroit, where we used the contextual inquery and UX research methods. </p>
+							
+							<div class="researcher__box">
+								<div class="researcher__title">
+									<h3 class="heading-3">Contextual<br>Inquery</h3>
+								</div>
+								<div class="researcher__info">
+									<p> We obeserved how staffs worked in real workplace and conducted five interview with them. Then we used affinity wall to analyze and summarize their main problems. </p>
+								</div>
+								
+							</div>
+
+							<div class="researcher__box researcher__box--left">
+								<div class="researcher__title">
+									<h3 class="heading-3">Needs<br>Assessment</h3>
+								</div>	
+								<div class="researcher__info">
+								<p>We applied interaction map, interview, comparative analysis and survey to determine which part of D3's website needs immediate change.  </p>
+							</div>
+							</div>
+							<div class="researcher__box">
+								<div class="researcher__title">
+									<h3 class="heading-3">Usability<br>Evaluation</h3>
+								</div>	
+								<div class="researcher__info">
+								<p>We used heuristic evaluation to evaluate the usability of D3's website and usability test to confirm suspicions about the site’s usability and evaluate aspects that we have not yet focused on. </p>
+							</div>
+							</div>
+					</div>
+					<a href="./project.html"><button class="homepage-button"> <span>View More</span> </button></a>	
+
+				</div>
 			</section>
 
 		</div>
-		<footer class="footer">
-			<section id="icon">
-			<a href="http://www.linkedin.com/in/"><i class="fab fa-linkedin icon-white" aria-hidden="true"></i><span class="iconhidden">LinkedIn</span></a>
-			<a href="https://www.pinterest.com/"><i class="fab fa-pinterest-square icon-white" aria-hidden="true"></i><span class="iconhidden">Pinterest</span></a>
-			<a href="https://www.facebook.com"><i class="fab fa-facebook-square icon-white" aria-hidden="true"></i><span class="iconhidden">Facebook</span></a>
-		</section>
-			<p>Designed by Shijie Zhao</p>
-			<p>&copy; 2017</p>
-		</footer>
-		<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-    <script src="js/js.js"> </script>
 
+		<footer class="footer">
+			<p>Designed by Shijie Zhao &copy; 2018</p>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/js.js"> </script>
+	<script>
+		var buttons=document.querySelectorAll('.homepage-button');
+		for (var i=0; i<buttons.length;i++){
+			buttons[i].onmousemove = (e) => {
+
+			const x = e.pageX - e.target.offsetLeft
+			const y = e.pageY - e.target.offsetTop
+
+			// console.log('page X',e.pageX,'***','page Y',e.target.offsetLeft, 'x',x);
+			// console.log( 'x',x, 'y',y);
+			console.log('page y',e.pageY,'***','page Y',e.target.offsetTop, 'y',y);
+
+
+			e.target.style.setProperty('--x', `${ x }px`)
+			e.target.style.setProperty('--y', `${ y }px`)
+			}
+		}
+					
+		
+	</script>
 	</body>
 </html>

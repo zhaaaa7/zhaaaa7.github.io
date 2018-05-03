@@ -1,0 +1,221 @@
+.homepage {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    font-size: 1.2rem; 
+}
+
+
+.index__name-card {    
+    img {
+        width: 100%;
+    }
+    height: 45vh;
+
+    @media only screen and (min-width:900px) {
+        height: 75vh;
+    }
+    background-image: linear-gradient(to right bottom,rgba(44, 98, 107, 0.7),rgba(19, 174, 104, 0.7)), url(../images/indexhead.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    @media only screen and (min-width:700px) {
+        height: 95vh;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.index__name-content {
+    margin-top: -5%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    @media only screen and (min-width:900px) {
+        height: 30%;
+    }
+}
+
+.index {
+    margin-top: 3.4rem;
+    line-height: 1.3;
+
+    @media only screen and (min-width:900px) {
+       padding: 5rem;
+       margin-top: 0;
+    }
+
+}
+
+
+.designer {
+    padding: 10rem 2rem;
+    margin-top: -6rem;
+    display: flex;
+    flex-direction: column;
+    
+    background-image: url(../images/device.svg);
+    background-size: 40%;
+    background-position: 90% 0%;
+    background-repeat: no-repeat;
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    &__content {
+        display: flex;
+        
+    }
+
+    &__description {
+        width: 100%;
+        line-height: 2;
+    }
+
+    a {
+        margin-top: 2rem;
+        align-self: center;
+    }   
+    
+}
+
+.developer {   
+    padding: 10rem 2rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/html.svg);
+    background-size: 30%;
+    background-position: 8% 4%;
+    background-repeat: no-repeat;
+
+    @media only screen and (min-width:700px) {
+        background-position: 0% 0%;
+    }
+
+    a {
+        margin-top: 2rem;
+        align-self: center;
+    }
+    h2 {
+        align-self: flex-end;
+    }
+
+
+    &__box {
+        width: 100%;
+        
+        &:not(:last-child){
+            margin-bottom: 4rem;
+        }
+        
+        padding: 1rem;
+        box-shadow: $small-shadow;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 8rem;
+        }
+
+        p {
+            padding: 2rem;
+            
+        }
+
+       
+    }
+
+    &__image {
+        width: 25%;
+        
+        position: absolute;
+        z-index: -1;
+
+        &--1 {
+            top: 2%;
+            left: 3px;
+        }
+
+        &--2 {
+            top: 95%;
+            right: 10%;
+        }
+    }
+
+    &__description {
+        width: 100%;
+        line-height: 2;
+        
+    }
+
+}
+
+
+.researcher {   
+    padding: 10rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/affinity-wall.svg);
+    background-size: 30%;
+    background-position: 90% 3%;
+    background-repeat: no-repeat;
+
+    a {
+        margin-top: 2rem;
+        align-self: center;
+    }
+    h2 {
+
+        padding: 0 2rem;
+        
+    }
+
+    h3 {
+        font-size: 1.7rem;
+        line-height: 1.9;
+    }
+
+    p {
+        line-height: 2;
+    }
+
+    &__summary {
+        padding: 1rem 2rem;
+    }
+
+    &__box {
+        padding: 2rem;
+        height: 20vh;
+        background-image: linear-gradient(90deg,rgba(#2C626B, .7) 0%, rgba(#2C626B, .7) 30%, transparent 30%) ,url(../images/detroitbg.jpg);
+        background-size:cover;
+        display: flex;
+        &--left {
+            background-image: linear-gradient(90deg, transparent 0%, transparent 30%, rgba(#2C626B, .7) 30%) ,url(../images/detroitbg.jpg);
+
+        }
+    }
+
+    &__title {
+        flex-basis: 30%;
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+
+    &__info {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        line-height: 1.6;
+        padding: 1rem;
+
+    }
+}

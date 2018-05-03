@@ -1,0 +1,78 @@
+.card {
+    position: relative;
+    // height: 40rem;
+    width:60%;
+
+    &__side {
+        // height: 40rem;
+        transition: all 1s ease;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        overflow: hidden;
+
+    }
+
+    &__picture {
+        background-size: cover;
+        height: 16rem;
+        background-blend-mode: screen;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+        &--1 {
+           background-image:linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),url(../images/user1.png);           
+        }
+        &--2{         
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../images/user2.jpg)
+        }
+        &--3{         
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../images/user3.jpg)
+        }
+    }
+
+    //front  side stylling
+
+    &__heading {
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top:10rem;
+        right:2rem;
+        text-align: right;
+        width:60%;
+        z-index: 10;
+    }
+
+    &__heading-span {
+        padding: .5rem 1rem;
+        box-decoration-break: clone;
+        
+
+        &--1{         
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light,.85), rgba($color-secondary-dark, .85))
+        }
+        &--2{         
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light,.85), rgba($color-primary-dark, .85))
+        }
+        &--3{         
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light,.85), rgba($color-tertiary-dark, .85))
+        }
+    }
+
+    &__details {
+        padding: 1rem;
+    }
+
+    &__back {
+        height: 10rem;
+        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+        // position: relative;
+        
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light,.85), rgba($color-secondary-dark, .85))
+
+        }
+    }
+}

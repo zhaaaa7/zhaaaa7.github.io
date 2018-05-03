@@ -1,0 +1,209 @@
+
+#fullpage-main{
+    .d3-page {
+        
+        text-align: center;
+        position: relative;
+
+
+        &__wrap {
+            padding: 4rem;
+            color: rgb(255, 255, 255);
+        }
+
+        &__content {
+          margin-top: 2rem;
+          display: flex;
+          height: 70vh;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: left;
+          line-height: 1.5;
+
+          .img-group {
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @media only screen and (min-width:900px) {
+              flex-direction: row;
+            }
+          }
+        
+          .sitemap {
+            width: 60vw;
+            display: block;
+            margin: 1.5rem auto;
+
+            @media only screen and (min-width:900px) {
+              margin: 0 2rem 0 0;
+            }
+            &--1 {
+              width: 40vw;
+            }
+
+            
+
+          }
+
+          ul {
+            list-style-position: inside
+          }
+
+          .review {
+            color: black;
+            font-weight: 300;
+            height: 10rem;
+            border-radius: 6px;
+
+            &:first-of-type {
+              margin-top: 2rem;
+            }
+           
+
+            &:nth-child(even) {
+              transform: translateX(-1.2rem);
+            }
+
+            &:nth-child(odd) {
+              transform: translateX(1.2rem);
+            }
+            .review__text {
+              margin-top: -2.2rem;
+            }
+          }
+
+          .table-wrapper {          
+            width: 85%;
+            margin: 1rem auto;
+            height: 85vh;
+            clip-path: polygon(0 0, 100% 0, 99% 50%, 50% 100%, 0 100%);
+
+          }
+          table, th, td {
+            border: 1px solid #fff;
+            border-collapse: collapse;
+            font-size: .8rem;
+
+            @media only screen and (min-width:600px) {
+              font-size: 2rem; 
+            }
+      
+            @media only screen and (min-width:700px) {
+                font-size: 1.4rem; 
+            }
+        
+            @media only screen and (min-width:900px) {
+                font-size: 1.6rem; 
+            }
+          }
+
+
+          th, td {
+            padding: 5px;
+            text-align: center;
+            vertical-align: center;
+          }
+
+          
+        }
+
+        &__svg {
+            width: 12rem;
+            position: absolute;
+            bottom: 3rem;
+            right: 3rem;
+        }
+        
+        &__survey {
+          width: 100%;
+          height: 30vh;
+          max-height: 100px;
+          margin-top: 8vh;
+      
+          @media only screen and (min-width:900px) {
+            width: 65%;
+            max-height: 100px;
+            height: 20vh;
+            margin: 2vh auto 2vh auto;
+          }
+        }
+
+        &__task {
+          background-color: #fff;
+          box-shadow: $shadow-dark;
+          padding: 1rem;
+          color: black;
+          text-align: left;
+          line-height: 1.3;
+          border-radius: 6px;
+          margin-bottom: 2rem;
+          font-size: 1rem;
+          margin: 1rem 0 0rem 0;
+
+          @media only screen and (min-width:600px) {
+            font-size: 2rem; 
+          }
+    
+          @media only screen and (min-width:700px) {
+              font-size: 1.4rem; 
+          }
+      
+          @media only screen and (min-width:900px) {
+              font-size: 1.3rem; 
+          }
+
+          &:nth-child(even) {
+            transform: translateX(-1.2rem);
+          }
+
+          &:nth-child(odd) {
+            transform: translateX(1.2rem);
+          }
+        }
+
+
+        .table-wrapper--heuristic {
+          th, td {
+
+            text-align: left;
+
+          }
+        }
+    }
+    
+    #page1 {
+      background-color:rgb(107, 88, 100);
+    }
+    
+    #page2 {
+      background-color:#EC777D;
+    }
+    
+    #page3 {
+      background-color:#5595B5;
+    }
+    
+    #page4 {
+      background-color:#EFA26C;
+    }
+
+    #page5 {
+        background-color:#76B099;
+    }
+
+    #page6 {
+        background-color:#5595B5;
+    }
+
+    #page7 {
+      background-color:rgb(116, 100, 110);
+  }
+}
+
+
+
+
+
+

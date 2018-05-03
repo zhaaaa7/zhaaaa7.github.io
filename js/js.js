@@ -1,45 +1,47 @@
+
+
 $(document).ready(function(){
 
   $("#menu").on("change",function(){
     if(this.checked){
-      $("#menu-content").css( "display", "block" );
+      $(".header__nav").css( "display", "flex" );
       $(this).siblings('label').html("&#10005;"); // cross
     }else{
-      $( "#menu-content" ).css( "display", "none" );
+      $( ".header__nav" ).css( "display", "none" );
       $(this).siblings('label').html("&#9776;");
     }
     });
 
  // check the size when first loaded
-  if($(window).width() <= 450){
+  if($(window).width() <= 768){
     $(window).scroll(function(){
-      $( "#menu-content" ).css( "display", "none" ).fadeOut( "slow" );
+      $( ".header__nav" ).css( "display", "none" ).fadeOut( "slow" );
       $("#menu-label").html("&#9776;");
-      console.log('450 scroll',$(window).width());
+      // console.log('450 scroll',$(window).width());
     });
    }else{
-    $( "#menu-content" ).css( "display", "block" );
+    $( ".header__nav" ).css( "display", "flex" );
   }
 
  // check the size when scrolling
   $(window).scroll(function(){
-    if($(window).width() <= 450){
-       $( "#menu-content" ).css( "display", "none" ).fadeOut( "slow" );
+    if($(window).width() <= 768){
+       $( ".header__nav" ).css( "display", "none" ).fadeOut( "slow" );
        $("menu-label").html("&#9776;");
-       console.log('resize scroll',$(window).width());
+      //  console.log('resize scroll',$(window).width());
       }
-    else{$( "#menu-content" ).css( "display", "block" );
-    console.log('Large screen resize scroll',$(window).width());
+    else{$( ".header__nav" ).css( "display", "flex" );
+    // console.log('Large screen resize scroll',$(window).width());
    }
  });
 
  //check the size when resizing
   $(window).resize(function() {
-    if($(window).width() > 450){
-      $( "#menu-content" ).css( "display", "block" );
-      console.log('resize',$(window).width());
+    if($(window).width() > 768){
+      $( ".header__nav" ).css( "display", "flex" );
+      // console.log('resize',$(window).width());
     }else{
-     $( "#menu-content" ).css( "display", "none" );
+     $( ".header__nav" ).css( "display", "none" );
     }
   });
 

@@ -1,0 +1,28 @@
+.user-card {
+    height: 40vw;
+    width: 60vw;
+
+
+
+    &__head {
+        height: 40%;
+        
+
+        &--1 {
+            filter:blur(3px) brightness(80%);
+            background-image: url(../images/user1.png);
+        }
+    }
+
+    &__avatar {
+        width: 30%;
+        height: 45%;
+        border-radius: 50%;
+        display: block;
+        margin-top: -4rem;
+        margin-left: 20vw;
+        z-index: 1;
+        position: relative;
+        
+    }
+}

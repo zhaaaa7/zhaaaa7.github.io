@@ -1,0 +1,223 @@
+.neighbor {
+    // background-color: $color-grey-light-2;
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+
+    &__heading {
+        background-image: linear-gradient(to right bottom,  #923886,rgba(69, 136, 207, 1));
+        display: block;
+        -webkit-background-clip: text;
+        color:transparent;
+        text-align: center;
+    }
+
+    header {
+        height: 40vh;
+        background-image: linear-gradient(to right top, rgba(69, 136, 207, 0.753), #923886), url(../images/cyheader.jpg);   
+        color: #fff;
+        @media only screen and (min-width:1000px) {
+            height: 45vh;
+        }
+    }
+    
+    &__title {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 25vh;  
+
+        @media only screen and (min-width:1000px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+       
+    }
+
+
+    &__nav {
+        padding: 2rem;
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__list {
+        display: inline-block;
+    }
+
+    &__link {
+        text-decoration: none;
+        margin: 0 1rem;
+        color: #fff;
+
+        @media only screen and (min-width:1000px) {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.neighbor__feature {
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    line-height: 1.8rem;
+    h2 {
+        margin: 1rem auto;
+    }
+
+    @media only screen and (min-width:1000px) {
+        flex-direction: row;
+        margin-top: -3rem;
+        z-index: 10;
+        
+        h2 {
+            display: none;
+        }
+    }
+
+    .feature-box {
+    background-color: #fff;
+    font-size: 1.5rem;
+    padding:  0.5rem;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $shadow-light;
+    margin: 1rem;
+
+    @media only screen and (min-width:1000px) {
+        flex-direction: column;
+        margin: -2rem 3rem 3rem 1rem;
+    }
+   
+    &__icon {
+        padding: 1rem;
+        img {
+           width: 8rem;
+           height: 8rem;
+            
+        }
+    }
+
+    &__info {
+        padding: 2rem;
+
+        h3 {
+            margin-bottom: 2rem;
+            @media only screen and (min-width:1000px) {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    }
+}
+
+.neighbor__proto,
+.neighbor__defense,
+.neighbor__interaction {
+    padding: 1rem;
+    margin: 5rem 2rem;
+    box-shadow: $shadow-dark;
+    border-radius: 3px;
+    ol, ul {
+        list-style-position: inside;
+    }
+    h2 {
+        margin: 2rem auto .8rem auto;
+        @media only screen and (min-width:900px) {
+            margin: 2rem auto 3rem auto;
+        }
+    }
+
+    iframe {
+        width: 280px;
+        height:210px;
+
+        @media only screen and (min-width:700px) {
+            width: 480px;
+            height:360px;
+        }
+
+        @media only screen and (min-width:900px) {
+            width: 520px;
+            height:400px;
+        }
+    }
+}
+
+.neighbor__proto-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (min-width:1000px) {
+        flex-direction: row;
+    }
+
+    .proto__info {
+        line-height: 1.5;
+        padding: 1rem;
+        @media only screen and (min-width:1000px) {
+            padding: 5rem;
+        }
+    
+    }
+
+    .proto__video {
+        padding: 2rem;
+
+    }
+}
+
+
+.neighbor__defense-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (min-width:1000px) {
+        flex-direction: row;
+    }
+
+    .defense__info {
+        line-height: 1.5;
+        padding: 1rem;
+
+        @media only screen and (min-width:1000px) {
+            flex-basis: 40%;
+        }
+        @media only screen and (min-width:1000px) {
+            padding-left: 5rem;
+        }
+    }
+    .defense__img {
+        width: 80%;
+        @media only screen and (min-width:1000px) {
+            width: 60%;
+        }
+
+        img {
+            width: 90%;
+        }
+    }
+}
+
+.neighbor__interaction-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    @media only screen and (min-width:1000px) {
+        flex-direction: row;
+    }
+    .interaction__info {
+        line-height: 1.5;
+        padding: 1rem;
+        align-self: flex-start;
+    }
+}

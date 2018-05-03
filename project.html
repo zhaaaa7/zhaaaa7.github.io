@@ -5,75 +5,94 @@
 	<title>Shijie Zhao Home</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!--Style-->
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="css/default.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 
 </head>
 <body>
 	<a href="#main-content" class="skip">Skip navigation</a>
-	<header>
-		<div id = "logo">
-			<a href="index.html"><img src="./images/logo.png" alt="logo" width="30"></a>
-		</div>
-		<nav id = "top-nav">
-			<input type="checkbox" id="menu" />
-      <label id="menu-label" for="menu">&#9776;</label>
-			<div id="menu-content">
-	       <ul >
-	            <li><a href="index.html" tabindex="1">HOME</a></li>
-	            <li><a href="design.html" tabindex="2">DESIGN</a></li>
-	            <li class="current-page" tabindex="3"><a  class="current-page" href="project.html">PROJECT</a></li>
-	            <li><a href="contact.html" tabindex="4">CONTACT</a></li>
-	        </ul>
+	<header class="header">
+			
+			<div class="header-fixed">
+				<div class="header__logo-box">
+					<a href="index.html"><img class="header__logo" src="./images/logo.png" alt="personal logo"></a>
+				</div>
+				<div class="header__menu-icon">
+						<input type="checkbox" id="menu" />
+						<label id="menu-label" for="menu">&#9776;</label>
+				</div>
 			</div>
-   	</nav>
-	</header>
+			
+			<nav class="header__nav">			
+				<div class="header__nav-content">
+					<ul class="nav-list">
+						<li class="nav-list__item"><a class="nav-list__link" href="index.html" tabindex="1">HOME</a></li>
+						<li class="nav-list__item"><a class="nav-list__link" href="design.html" tabindex="2">DESIGN</a></li>
+						<li class="nav-list__item current-page"><a class="nav-list__link current-page" href="project.html" tabindex="3">PROJECT</a></li>
+						<li class="nav-list__item"><a class="nav-list__link" href="coding.html" tabindex="4">CODING</a></li>
+					</ul>
+				</div>
+			</nav>
+			   
+		</header>
 
-	<div id="main-content">
+	<section id="project-main">
 
-		<div id="uxProjects">
-			<section class="project">
-				<img src="./images/detroit.jpg" alt="project1" />
-				<section class="pro-description">
-					<h2 class="title">D3 Website Usability Test</h2>
-					<p>This is the course project of SI622. During the three months, our group conducted a series researches on Data Driven Detroit's website, including interaction map, interviews with users, comparative analysis, survey distribution and analysis, heuristic evaluation, and usability tests.</p>
+		<div class="uxProjects">
+			<div class="column">
+				<section class="project">
+					<img src="./images/detroit.jpg" alt="project1" />
+					<section class="pro-description">
+						<h2 class="title">Usability Test</h2>
+						<p>This is the course project of SI622. During the three months, our group conducted a series researches on Data Driven Detroit's website, including interaction map, interviews with users, comparative analysis, survey distribution and analysis, heuristic evaluation, and usability tests.</p>
+					</section>
+					<a class="btn-inline" href="./projects/d3.html">View More <span>&rarr;</span></a>
 				</section>
-			</section>
-			<section class="project">
-				<img src="./images/project4.png" alt="project4" />
-				<section class="pro-description">
-					<h2 class="title">NeighborItem App</h2>
-					<p>The NeighborItem is an app that provides an information exchange platform helping residents in Courtyards borrow things from each other. There three main features: incentive mechanism, post borrowing request and private chat.</p>
-				</section>
-			</section>
-			<section class="project">
-				<img src="./images/project2.png" alt="project2" />
-				<section class="pro-description">
-					<h2 class="title">Logo Design for ULead</h2>
-					<p>University Leaders for Educational Access and DiversityNetwork is an organization in umich. The “E” letter is larger than others because uLEAD devotes to provide education for undocumented, which is the most important message the logo should convey. Also, the “D” letter stands for “diversity” is another message that needs to be emphasized in this logo.</p>
-				</section>
-			</section>
-			<section class="project">
-				<img src="./images/project3.png" alt="project3" />
-				<section class="pro-description">
-					<h2 class="title">MyMemory App</h2>
-					<p>MyMemory is an app that aims at helping users recording their life. We hope that the user can see this app as a private photo management tool with which they can develop the habit of timely managing their photos so as to lose their valuable memory. We also incorporate e-commerce element into the app where users can buy physical albums.</p>
-				</section>
-			</section>
 
+				<section class="project">
+					<img src="./images/project2.png" alt="project2" />
+					<section class="pro-description">
+						<h2 class="title">Logo Design</h2>
+						<p>University Leaders for Educational Access and DiversityNetwork is an organization in umich. The “E” letter is larger than others because uLEAD devotes to provide education for undocumented, which is the most important message the logo should convey. </p>	
+					</section>
+					<a class="btn-inline" href="./projects/uleadlogo.html">View More <span>&rarr;</span></a>
+				</section>
+
+				<section class="project">
+					<img src="./images/project4.png" alt="project4" />
+					<section class="pro-description">
+						<h2 class="title">NeighborItem App</h2>
+						<p>The NeighborItem is an app that provides an information exchange platform helping residents in Courtyards borrow things from each other. There three main features: incentive mechanism, post borrowing request and private chat.</p>
+					</section>
+					<a class="btn-inline" href="./projects/neighborItem.html">View More <span>&rarr;</span></a>
+				</section>
+			</div>
+						
+			<div class="column column--1">
+				<section class="project">
+					<img src="./images/project3.png" alt="project3" />
+					<section class="pro-description">
+						<h2 class="title">MyMemory App</h2>
+						<p>MyMemory is an app that aims at helping users recording their life. We hope that the user can see this app as a private photo management tool with which they can develop the habit of timely managing their photos so as to lose their valuable memory. We also incorporate e-commerce element into the app where users can buy physical albums.</p>
+					</section>
+					<a class="btn-inline" href="./projects/myMemory.html">View More <span>&rarr;</span></a>
+				</section>
+	
+				<section class="project">
+					<img src="./images/project5.png" alt="project3" />
+					<section class="pro-description">
+						<h2 class="title">GoalPro App</h2>
+						<p>GoalPro is an open source goal setting community. Here, users can find the mature plan of specific goals. Also, there are all kinds of measurement system that helps users track your progress. We also provides data visualizations and rewards for users. Anthor important feature is the notification system. </p>
+					</section>
+					<a class="btn-inline" href="./projects/goalPro.html">View More <span>&rarr;</span></a>
+				</section>
+			</div>
+			
 		</div>
 	</div>
   <footer class="footer">
-    <section id="icon">
-    <a href="http://www.linkedin.com/in/"><i class="fab fa-linkedin icon-white" aria-hidden="true"></i><span class="iconhidden">LinkedIn</span></a>
-    <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-square icon-white" aria-hidden="true"></i><span class="iconhidden">Pinterest</span></a>
-    <a href="https://www.facebook.com"><i class="fab fa-facebook-square icon-white" aria-hidden="true"></i><span class="iconhidden">Facebook</span></a>
-  </section>
-    <p>Designed by Shijie Zhao</p>
-    <p>&copy; 2017</p>
+    
+    <p>Designed by Shijie Zhao &copy; 2018</p>
   </footer>
   <script
 src="https://code.jquery.com/jquery-3.3.1.min.js"

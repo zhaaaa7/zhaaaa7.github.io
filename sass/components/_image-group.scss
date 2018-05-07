@@ -1,8 +1,10 @@
 .composition {
     position: relative;
+    margin: 0 auto;
+    width: 70vmin;
 
     &__photo {
-        width:25rem;
+        width:50vmin;
         display: block;
         box-shadow: 0 1.5rem 4rem rgba($color-black,.4);
         border-radius: 2px;

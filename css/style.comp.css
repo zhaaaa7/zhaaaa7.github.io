@@ -1439,7 +1439,8 @@ body {
     max-width: 450px;
     margin: 3rem auto;
     box-shadow: 0rem 0.3rem 1rem rgba(0, 0, 0, 0.15);
-    overflow: hidden; }
+    overflow: hidden;
+    border-radius: 10px; }
     .coding .coding-box__head {
       height: 80px;
       position: relative;

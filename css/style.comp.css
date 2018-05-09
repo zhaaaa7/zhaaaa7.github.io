@@ -497,6 +497,7 @@ body {
   background-position: bottom;
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center; }
   .index__name-card img {
@@ -508,6 +509,11 @@ body {
     .index__name-card {
       height: 95vh;
       clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); } }
+  .index__name-card a.btn {
+    display: none; }
+    @media screen and (min-width: 21cm) {
+      .index__name-card a.btn {
+        display: inline-block; } }
 
 .index__name-content {
   margin-top: -5%;
@@ -1655,7 +1661,7 @@ body {
   border: 1px solid #ccc;
   width: 21cm;
   height: 29.7cm;
-  margin: 20px auto;
+  margin: 80px auto;
   padding: 5px 15px;
   position: relative;
   display: grid;
@@ -1925,3 +1931,66 @@ a.skip:active, a.skip:focus, a.skip:hover {
   .homepage-button:hover::before {
     --size: 300px;
     z-index: 99; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative;
+  border: none;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scale(1.2);
+    opacity: 0; }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.btn:after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s; }
+
+.btn--white {
+  background-color: #fff;
+  color: #777; }
+  .btn--white:after {
+    background-color: #fff; }
+
+.btn--animated {
+  animation: moveInButton  0.5s ease-out 0.25s;
+  animation-fill-mode: backwards; }
+
+.btn-text:link, .btn-text:visited {
+  font-size: 1rem;
+  color: #2C4D3A;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #2C4D3A;
+  padding: 5px; }
+
+.btn-text:hover {
+  background-color: #2C4D3A;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }

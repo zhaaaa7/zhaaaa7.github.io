@@ -2,7 +2,7 @@
 website
 
 ### Details on `yarn serve --remote`
-- If you get an error, try `sudo vi /etc/hosts`,replace the content with the text below (press i):
+- If you get an error, try `sudo vi /etc/hosts`, replace the content with the text below (press i):
 ``` 127.0.0.1       localhost
     255.255.255.255 broadcasthost
     ::1             localhost

@@ -1664,16 +1664,16 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 6%  58%  10% 18%;
-  grid-template-areas: "name" "internship" "skill" "education";
-  grid-gap: 30px 20px; }
+  grid-template-rows: 6%  75% 12% 3%;
+  grid-template-areas: "name" "internship" "education" "skill";
+  grid-gap: 5px 5px; }
   .resume li {
     list-style-type: none; }
   .resume__name {
     grid-area: name;
     display: flex;
     align-items: center;
-    padding-top: 20px; }
+    padding-top: 8px; }
     .resume__name .info {
       flex-basis: 60%;
       padding-left: 30px; }
@@ -1681,7 +1681,7 @@ body {
         font-size: 40px;
         font-weight: 500; }
       .resume__name .info h3 {
-        padding-top: 12px;
+        padding-top: 0px;
         font-weight: 300;
         font-size: 19px; }
     .resume__name .contact p {
@@ -1704,12 +1704,14 @@ body {
       font-size: 11px; }
   .resume__internship {
     grid-area: internship; }
+    .resume__internship--first {
+      margin-bottom: 20px; }
     .resume__internship .date {
       color: #8d8d8d;
       font-size: 11px;
       margin-bottom: 8px; }
     .resume__internship h4 {
-      font-size: 14px;
+      font-size: 13px;
       margin-bottom: 2px; }
       .resume__internship h4.healthy {
         margin-top: 5px; }
